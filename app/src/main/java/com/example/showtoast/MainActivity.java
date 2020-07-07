@@ -51,4 +51,40 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void onCheckBoxClicked(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+        switch (view.getId()){
+            case R.id.chocolate_syrup_checkbox:
+                if(checked)
+                    Log.d("Chocolate_syrup", "Checked");
+                else
+                    Log.d("Chocolate_syrup", "Unchecked");
+                break;
+            case R.id.sprinkles_checkbox:
+                if(checked)
+                    Log.d("Sprinkles", "Checked");
+                else
+                    Log.d("Sprinkles", "Unchecked");
+                break;
+            case R.id.crushed_nuts_checkbox:
+                if(checked)
+                    Log.d("Crushed_nuts", "Checked");
+                else
+                    Log.d("Crushed_nuts", "Unchecked");
+                break;
+            case R.id.cherries_checkbox:
+                if(checked)
+                    Log.d("Cherries", "Checked");
+                else
+                    Log.d("Cherries", "Unchecked");
+            break;
+            case R.id.orio_cookies_crumbles_checkbox:
+                if(checked)
+                    Log.d("Orio_cookies_crumbles", "Checked");
+                else
+                    Log.d("Orio_cookies_crumbles", "Unchecked");
+                break;
+        }
+    }
 }

@@ -15,7 +15,8 @@
         android:layout_marginTop="20dp"
         android:text="@string/chocolate_syrup"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onCheckBoxClicked"/>
 
     <CheckBox
         android:id="@+id/sprinkles_checkbox"
@@ -25,7 +26,8 @@
         android:layout_marginTop="20dp"
         android:text="@string/sprinkles"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chocolate_syrup_checkbox" />
+        app:layout_constraintTop_toBottomOf="@+id/chocolate_syrup_checkbox"
+        android:onClick="onCheckBoxClicked"/>
 
     <CheckBox
         android:id="@+id/crushed_nuts_checkbox"
@@ -35,7 +37,8 @@
         android:layout_marginTop="20dp"
         android:text="@string/crushed_nuts"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sprinkles_checkbox" />
+        app:layout_constraintTop_toBottomOf="@+id/sprinkles_checkbox"
+        android:onClick="onCheckBoxClicked"/>
 
     <CheckBox
         android:id="@+id/cherries_checkbox"
@@ -45,7 +48,8 @@
         android:layout_marginTop="20dp"
         android:text="@string/cherries"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/crushed_nuts_checkbox" />
+        app:layout_constraintTop_toBottomOf="@+id/crushed_nuts_checkbox"
+        android:onClick="onCheckBoxClicked"/>
 
     <CheckBox
         android:id="@+id/orio_cookies_crumbles_checkbox"
@@ -55,7 +59,8 @@
         android:layout_marginTop="20dp"
         android:text="@string/orio_cookies_crumbles"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cherries_checkbox"/>
+        app:layout_constraintTop_toBottomOf="@+id/cherries_checkbox"
+        android:onClick="onCheckBoxClicked"/>
 
     <Button
         android:id="@+id/btn_show_toast"
